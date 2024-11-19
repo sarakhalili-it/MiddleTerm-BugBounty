@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sara Khalili" />
+    <title>Bug Bounty</title>
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/Css/reset.css" />
+    <link rel="stylesheet" href="/Css/columns.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/Css/style.css" />
+  </head>
+  <body>
+    <header class="sec-header">
+      <div class="container">
+        <div class="app-bar">
+          <div class="register-action">
+            <ul class="registration-menu flex">
+              <li
+                class="registration-menu__item registration-menu__item--back-color"
+              >
+                <a href="#" class="registration-menu__link">ورود</a>
+              </li>
+              <li
+                class="registration-menu__item registration-menu__item--border"
+              >
+                <a
+                  href="#"
+                  class="registration-menu__link registration-menu__link--color"
+                  >ثبت نام</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="sec-main">
+        <div class="container">
+          <div class="main-container flex-space-between">
+            <div class="main-container__content">
+              <h1 class="main-container__header">کلاه سفیدت رو سرت بذار</h1>
+              <p class="main-container__description">
+                با شناسایی آسیب پذیری ها، بر اساس شدت آسیب پذیری کشف‌شده،
+                <em class="highligth">پاداش</em> دریافت کنید. گزارش‌های خود را
+                ارسال کنید، با تیم ما همکاری کنید و نقش مهمی در ایجاد یک محیط
+                دیجیتال امن‌تر برای همه ایفا کنید.
+              </p>
+              <form action="/" class="main-container__form flex">
+                <label class="main-container__label">
+                  <select
+                    name="scope"
+                    id="scope"
+                    class="main-container__select"
+                  >
+                    <option value="scope" class="main-container__option">
+                      انتخاب قلمرو
+                    </option>
+                    <option value="scope1" class="main-container__option">
+                      انتخاب قلمرو1
+                    </option>
+                    <option value="scope2" class="main-container__option">
+                      انتخاب قلمرو2
+                    </option>
+                  </select>
+                </label>
+
+                <button type="submit" class="main-container__button">
+                  ارسال آسیب پذیری
+                </button>
+              </form>
+            </div>
+
+            <div class="main-container__wrapper">
+              <div class="main-container__img-box inlineFelx">
+                <img src="/img/pc.svg" class="main-container__img" />
+              </div>
+              <div class="main-container__box-shadow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-competition">
+        <div class="container">
+          <div class="competition">
+            <div class="awards flex">
+              <div class="awards__component">
+                <div class="awards__img-box inlineFelx">
+                  <img src="/img/gift.png" class="awards__img" />
+                </div>
+                <h2 class="awards__title">تا ۳۰۰ میلیون تومان جایزه‌</h2>
+              </div>
+              <div class="awards__component">
+                <div class="awards__img-box inlineFelx">
+                  <img src="/img/personalcard.png" class="awards__img" />
+                </div>
+                <h2 class="awards__title">جذب در تیم امنیت ابری آرمان</h2>
+              </div>
+              <div class="awards__component">
+                <div class="awards__img-box inlineFelx">
+                  <img src="/img/cup.png" class="awards__img" />
+                </div>
+                <h2 class="awards__title">جوایز ماهانه‌ی لیدربرد</h2>
+              </div>
+            </div>
+            <div class="title-secation">
+              <h3 class="title-secation__header">مراحل شرکت در مسابقه</h3>
+              <p class="title-secation__description">
+                دوستانی که تمام مراحل کشف تا رفع آسیب پذیری رو در کنار ما باشند
+                در اولویت پیوستن به تیم امنیت ابری آروان قرار میگیرند .
+              </p>
+            </div>
+            <div class="competition-steps flex">
+              <div class="competition-steps__component flex-column">
+                <div class="competition-steps__img-box inlineFelx">
+                  <img
+                    src="/img/global-search.png"
+                    class="competition-steps__img"
+                  />
+                </div>
+                <h4 class="competition-steps__title">۱- انتخاب قلمرو</h4>
+                <p class="competition-steps__description">
+                  با مشاهده‌ی قلمروی تعیین شده میتونی با تمرکز به بپردازی پ از
+                  دریافت جایزه مطمئن باشی
+                </p>
+              </div>
+              <div class="competition-steps__component flex-column">
+                <div class="competition-steps__img-box inlineFelx">
+                  <img
+                    src="/img/search-status.png"
+                    class="competition-steps__img"
+                  />
+                </div>
+                <h4 class="competition-steps__title">2- شناسایی آسیب پذیری</h4>
+                <p class="competition-steps__description">
+                  با مشاهده‌ی قلمروی تعیین شده میتونی با تمرکز به بپردازی پ از
+                  دریافت جایزه مطمئن باشی
+                </p>
+              </div>
+              <div class="competition-steps__component flex-column">
+                <div class="competition-steps__img-box inlineFelx">
+                  <img
+                    src="/img/message-tick.png"
+                    class="competition-steps__img"
+                  />
+                </div>
+                <h4 class="competition-steps__title">۳- ثبت آسیب پذیری</h4>
+                <p class="competition-steps__description">
+                  با مشاهده‌ی قلمروی تعیین شده میتونی با تمرکز به بپردازی پ از
+                  دریافت جایزه مطمئن باشی
+                </p>
+              </div>
+              <div class="competition-steps__component flex-column">
+                <div class="competition-steps__img-box inlineFelx">
+                  <img
+                    src="/img/archive-book.png"
+                    class="competition-steps__img"
+                  />
+                </div>
+                <h4 class="competition-steps__title">
+                  4- رفع آسیب پذیری و دریافت جایزه
+                </h4>
+                <p class="competition-steps__description">
+                  با مشاهده‌ی قلمروی تعیین شده میتونی با تمرکز به بپردازی پ از
+                  دریافت جایزه مطمئن باشی
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-information">
+        <div class="container-fluid">
+          <div class="information">
+            <h4 class="information__title">
+              تا<em class="highligth"> 300 میلیون تومان</em> جایزه نقدی
+            </h4>
+            <p class="information__description">
+              برای آسیب پذیری‌هایی که باعث میشوند تمام اطلاعات خصوصی (PII) و/یا
+              تصاویر مدارک هویتی همه‌ی مشتریان در دسترس قراربگیرند.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="sec-bonus-calculation">
+        <div class="container">
+          <div class="bonus-calculation">
+            <div class="bonus-calculation__information">
+              <h3 class="bonus-calculation__title">نحوه‌ی محاسبه‌ی جایزه</h3>
+              <p class="bonus-calculation__description">
+                زمانی که آسیب‌پذیری شناسایی شده شما روی
+                <em class="bonus-calculation__important">زیرساخت ابری</em> ما به
+                تایید داوران ابرآروان برسه و رفع بشه ، جایزه‌ی نقدی براساس شدت و
+                اهمیت آسیب‌پذیری ، مطابق استانداردهای زیر تعیین میشه :
+              </p>
+            </div>
+            <div class="bouns flex-column">
+              <div class="bouns__compenent flex-space-between">
+                <div class="bouns__content flex">
+                  <div class="bouns__img-box inlineFelx">
+                    <img src="/img/gift1.svg" class="bouns__img" />
+                  </div>
+                  <h4 class="bouns__title">
+                    تا <em class="highligth">300 میلیون</em> تومان (ویژه)
+                  </h4>
+                </div>
+                <h4 class="bouns__title">مساله مرگ و زندگیه ( Vital )</h4>
+              </div>
+              <div class="bouns__compenent flex-space-between">
+                <div class="bouns__content flex">
+                  <div class="bouns__img-box inlineFelx">
+                    <img src="/img/gift2.svg" class="bouns__img" />
+                  </div>
+                  <h4 class="bouns__title">
+                    تا <em class="highligth">50 میلیون</em> تومان (طلایی)
+                  </h4>
+                </div>
+                <h4 class="bouns__title">پای آبرو وسطه ( Critical )</h4>
+              </div>
+              <div class="bouns__compenent flex-space-between">
+                <div class="bouns__content flex">
+                  <div class="bouns__img-box inlineFelx">
+                    <img src="/img/gift3.svg" class="bouns__img" />
+                  </div>
+                  <h4 class="bouns__title">
+                    تا <em class="highligth">40 میلیون</em> تومان (نقره ای)
+                  </h4>
+                </div>
+                <h4 class="bouns__title">واجبه حل بشه ( High )</h4>
+              </div>
+              <div class="bouns__compenent flex-space-between">
+                <div class="bouns__content flex">
+                  <div class="bouns__img-box inlineFelx">
+                    <img src="/img/gift4.svg" class="bouns__img" />
+                  </div>
+                  <h4 class="bouns__title">
+                    تا <em class="highligth">30 میلیون</em> تومان (برنزی)
+                  </h4>
+                </div>
+                <h4 class="bouns__title">خوبه که حل بشه ( Medium )</h4>
+              </div>
+              <div class="bouns__compenent flex-space-between">
+                <div class="bouns__content flex">
+                  <div class="bouns__img-box inlineFelx">
+                    <img src="/img/gift5.svg" class="bouns__img" />
+                  </div>
+                  <h4 class="bouns__title">
+                    تا <em class="highligth">1 میلیون</em> تومان
+                  </h4>
+                </div>
+                <h4 class="bouns__title">بد نیست که حل بشه ( Low )</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-the-best">
+        <div class="container">
+          <div class="title-secation">
+            <h3 class="title-secation__header title-secation__header--position">
+              هکرهای برتر
+            </h3>
+            <p class="title-secation__description">
+              هرماه از بین برترین هکرهای کلاه سفید به قید قرعه به سه نفر جایزه
+              داده میشه . <br />همینطور برترین هکر هرماه هم جایزه ی مخصوص خودشو
+              داره . سعی کن با گزارش آسیب پذیری ، جزو ده نفر اول باشی
+            </p>
+          </div>
+          <div class="the-best flex">
+            <div class="best-hacker">
+              <h4 class="best-hacker__title">هکربرتر این ماه</h4>
+              <div class="best-hacker__information flex-column">
+                <img src="/img/crown.svg" class="best-hacker__icon" />
+                <div class="best-hacker__img-box">
+                  <img src="/img/avatarhacker.jpg" class="imgSize" />
+                </div>
+                <span class="best-hacker__name">Soheil.b</span>
+                <div class="best-hacker__position">
+                  <img src="/img/bugbonty.png" class="imgSize" />
+                </div>
+              </div>
+              <div class="best-hacker__honor">
+                <div class="best-hacker__honor-component flex-space-between">
+                  <span class="best-hacker__honor-content"
+                    >مجموع کل جایزه‌ها
+                  </span>
+                  <span class="best-hacker__honor-type">
+                    <em class="highligth">480،000،000</em>
+                    تومان</span
+                  >
+                </div>
+                <div class="best-hacker__honor-component flex-space-between">
+                  <span class="best-hacker__honor-content">جوایز این ماه </span>
+                  <span class="best-hacker__honor-type">
+                    <em class="highligth">80،000،000</em>
+                    تومان</span
+                  >
+                </div>
+                <div class="best-hacker__honor-component flex-space-between">
+                  <span class="best-hacker__honor-content"
+                    >تعداد کشف آسیب پذیری
+                  </span>
+                  <span class="best-hacker__honor-type">
+                    <em class="highligth">7</em>
+                    آسیب‌پذیری</span
+                  >
+                </div>
+              </div>
+              <div class="best-hacker__date">مرداد 1403</div>
+            </div>
+
+            <div class="others">
+              <ul class="titles flex">
+                <li class="titles__item">نام/مستعار هکر</li>
+                <li class="titles__item">کل جوایز دریافتی</li>
+                <li class="titles__item">جوایز این ماه</li>
+                <li class="titles__item">تعداد آسیب پذیری</li>
+              </ul>
+              <div class="other-hacker flex-column">
+                <div class="other-hacker__component flex">
+                  <div class="other-hacker__profile flex">
+                    <span class="other-hacker__number">2</span>
+                    <div
+                      class="other-hacker__wrapper other-hacker__wrapper--silver"
+                    >
+                      <div class="other-hacker__img-box inlineFelx">
+                        <img src="/img/profile.png" class="imgSize" />
+                      </div>
+                    </div>
+
+                    <span class="other-hacker__name other-hacker__name--blur"
+                      >AriyanDV</span
+                    >
+                  </div>
+                  <ul class="other-hacker__price flex-space-between">
+                    <li class="other-hacker__unit">
+                      <em class="highligth">4۲0،000،000</em> تومان
+                    </li>
+                    <li class="other-hacker__unit">
+                      <em class="highligth">40،000،000</em> تومان
+                    </li>
+                  </ul>
+                  <div class="other-hacker__dameg">
+                    <span class="other-hacker__unit">
+                      <em class="highligth">6</em> آسیب پذیری
+                    </span>
+                  </div>
+                </div>
+                <div class="other-hacker__component flex">
+                  <div class="other-hacker__profile flex">
+                    <span class="other-hacker__number">3</span>
+                    <div
+                      class="other-hacker__wrapper other-hacker__wrapper--bronz"
+                    >
+                      <div class="other-hacker__img-box inlineFelx">
+                        <img src="/img/profile2.jpg" class="imgSize" />
+                      </div>
+                    </div>
+
+                    <span class="other-hacker__name">Sima rad</span>
+                  </div>
+                  <ul class="other-hacker__price flex-space-between">
+                    <li class="other-hacker__unit">
+                      <em class="highligth">150،000،000</em> تومان
+                    </li>
+                    <li class="other-hacker__unit">
+                      <em class="highligth">23،000،000</em> تومان
+                    </li>
+                  </ul>
+                  <div class="other-hacker__dameg">
+                    <span class="other-hacker__unit">
+                      <em class="highligth">4</em> آسیب پذیری
+                    </span>
+                  </div>
+                </div>
+                <div class="other-hacker__component flex">
+                  <div class="other-hacker__profile flex">
+                    <span class="other-hacker__number">4</span>
+                    <div class="other-hacker__wrapper">
+                      <div class="other-hacker__img-box inlineFelx">
+                        <img src="/img/profile3.png" class="imgSize" />
+                      </div>
+                    </div>
+
+                    <span class="other-hacker__name other-hacker__name--blur"
+                      >AriyanDV</span
+                    >
+                  </div>
+                  <ul class="other-hacker__price flex-space-between">
+                    <li class="other-hacker__unit">
+                      <em class="highligth">50،000،000</em> تومان
+                    </li>
+                    <li class="other-hacker__unit">
+                      <em class="highligth">20،000،000</em> تومان
+                    </li>
+                  </ul>
+                  <div class="other-hacker__dameg">
+                    <span class="other-hacker__unit">
+                      <em class="highligth">4</em> آسیب پذیری
+                    </span>
+                  </div>
+                </div>
+                <div class="other-hacker__component flex">
+                  <div class="other-hacker__profile flex">
+                    <span class="other-hacker__number">5</span>
+                    <div class="other-hacker__wrapper">
+                      <div class="other-hacker__img-box inlineFelx">
+                        <img src="/img/profile4.png" class="imgSize" />
+                      </div>
+                    </div>
+
+                    <span class="other-hacker__name">AriyanDV</span>
+                  </div>
+                  <ul class="other-hacker__price flex-space-between">
+                    <li class="other-hacker__unit">
+                      <em class="highligth">48،000،000</em> تومان
+                    </li>
+                    <li class="other-hacker__unit">
+                      <em class="highligth">13،000،000</em> تومان
+                    </li>
+                  </ul>
+                  <div class="other-hacker__dameg">
+                    <span class="other-hacker__unit">
+                      <em class="highligth">3</em> آسیب پذیری
+                    </span>
+                  </div>
+                </div>
+                <div class="other-hacker__component flex">
+                  <div class="other-hacker__profile flex">
+                    <span class="other-hacker__number">6</span>
+                    <div class="other-hacker__wrapper">
+                      <div class="other-hacker__img-box inlineFelx">
+                        <img src="/img/profile5.jpg" class="imgSize" />
+                      </div>
+                    </div>
+
+                    <span class="other-hacker__name other-hacker__name--blur"
+                      >AriyanDV</span
+                    >
+                  </div>
+                  <ul class="other-hacker__price flex-space-between">
+                    <li class="other-hacker__unit">
+                      <em class="highligth">40،000،000</em> تومان
+                    </li>
+                    <li class="other-hacker__unit">
+                      <em class="highligth">8،000،000</em> تومان
+                    </li>
+                  </ul>
+                  <div class="other-hacker__dameg">
+                    <span class="other-hacker__unit">
+                      <em class="highligth">3</em> آسیب پذیری
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="position-pic flex">
+              <div class="position-pic-img--size">
+                <img src="/img/wallet-money.svg" class="imgSize" />
+              </div>
+              <div class="position-pic-img--size">
+                <img src="/img/dollar-square.svg" class="imgSize" />
+              </div>
+
+              <div class="position-pic-img-box">
+                <img
+                  src="/img/giftposition1.svg"
+                  class="position-pic--absoulte imgSize"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-information">
+        <div class="container-fluid">
+          <div class="information">
+            <h4 class="information__title information__title--size">
+              معیار سنجش
+            </h4>
+            <p
+              class="information__description information__description--weight"
+            >
+              شدت و خطر آسیب‌پذیری‌ها به‌شکل عمومی با استفاده از استاندارد
+              CVSSv3 ارزیابی می‌شه.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="sec-domain">
+        <div class="container">
+          <div class="title-secation title-secation--margin">
+            <h3 class="title-secation__header title-secation__header--color">
+              قلمرو کشف آسیب پذیری
+            </h3>
+            <p
+              class="title-secation__description title-secation__description--color"
+            >
+              ممنون که در شناسایی آسیب پذیری‌های محصولات ابرآروان مشارکت میکنی.
+              در ادامه‌ی این صفحه گام‌های زیر رو طی خواهی کرد . در این مسیر
+              <em class="title-secation__important">تیم داوری ابرآروان</em> هم
+              در کنارت هستند .
+            </p>
+          </div>
+          <div class="domain-cause flex">
+            <div class="domain-cause__icon">
+              <img
+                src="/img/messageprogramming.svg"
+                class="domain-cause__img"
+              />
+            </div>
+            <span class="domain-cause__title">دامنه ها</span>
+          </div>
+          <div class="domain-box flex">
+            <div class="domain-box__component btn">
+              <a href="#" class="btn__url">Panel.arvancloud.ir</a>
+            </div>
+            <div class="domain-box__component btn">
+              <a href="#" class="btn__url">Accounts.arvancloud.ir</a>
+            </div>
+            <div class="domain-box__component btn">
+              <a href="#" class="btn__url">Napi.arvancloud.ir</a>
+            </div>
+          </div>
+          <div class="domain-cause flex">
+            <div
+              class="domain-cause__icon domain-cause__icon--border inlineFelx"
+            >
+              <span class="domain-cause__text">IP</span>
+            </div>
+            <span class="domain-cause__title">محدوده‌های آی پی ها</span>
+          </div>
+          <div class="ip-box flex">
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+            <div class="ip-box__component btn">
+              <a href="#" class="btn__url">45.82.136.0/22</a>
+            </div>
+          </div>
+          <div class="domain-cause flex">
+            <div class="domain-cause__icon">
+              <img src="/img/bug.png" class="domain-cause__img" />
+            </div>
+            <span class="domain-cause__title">آسیب‌پذیری ها</span>
+          </div>
+          <div class="bugs">
+            <ul class="bugs-nav flex-space-between">
+              <li class="bugs_nav__items">
+                <span class="bugs-nav__content">Vital</span>
+              </li>
+              <li class="bugs_nav__items">
+                <span class="bugs-nav__content">Critical</span>
+              </li>
+              <li class="bugs_nav__items">
+                <span class="bugs-nav__content">High</span>
+              </li>
+              <li class="bugs_nav__items bugs_nav__items--active">
+                <span class="bugs-nav__content">Medium</span>
+              </li>
+              <li class="bugs_nav__items">
+                <span class="bugs-nav__content">Low</span>
+              </li>
+            </ul>
+            <ul class="bugs-box bugs-box--back-gray flex">
+              <li class="bugs-box__component">
+                SSRF (Internal Scan and/or Medium Impact)
+              </li>
+              <li class="bugs-box__component">
+                Partial Source Code Disclosure of one of private arvancloud's
+                products
+              </li>
+              <li class="bugs-box__component bugs-box__component--flex-grow">
+                OAuth misusable misconfiguration
+              </li>
+              <li class="bugs-box__component">
+                Misusable misconfiguration of CAPTCHA implementation
+              </li>
+              <li class="bugs-box__component bugs-box__component--flex-grow">
+                CRLF Injection
+              </li>
+              <li class="bugs-box__component">
+                Unauthorized Access to Services (API / Endpoints)
+              </li>
+              <li class="bugs-box__component">Delete a user Account</li>
+              <li class="bugs-box__component bugs-box__component--flex-grow">
+                CRLF Injection
+              </li>
+              <li class="bugs-box__component">
+                Account Takeover by User Interaction
+              </li>
+              <li class="bugs-box__component">
+                Second Factor Authentication (2FA) Bypass
+              </li>
+              <li class="bugs-box__component">
+                Source Code Disclosure of arvancloud's websites
+              </li>
+              <li class="bugs-box__component">
+                SSRF (Internal Scan and/or Medium Impact)
+              </li>
+              <li class="bugs-box__component">
+                Partial Source Code Disclosure of one of private arvancloud's
+                products
+              </li>
+              <li class="bugs-box__component bugs-box__component--flex-grow">
+                OAuth misusable misconfiguration
+              </li>
+              <li class="bugs-box__component">
+                Misusable misconfiguration of CAPTCHA implementation
+              </li>
+              <li class="bugs-box__component bugs-box__component--flex-grow">
+                CRLF Injection
+              </li>
+              <li class="bugs-box__component">
+                Unauthorized Access to Services (API / Endpoints)
+              </li>
+              <li class="bugs-box__component">Delete a user Account</li>
+              <li class="bugs-box__component bugs-box__component--flex-grow">
+                CRLF Injection
+              </li>
+              <li class="bugs-box__component">
+                Account Takeover by User Interaction
+              </li>
+              <li class="bugs-box__component">
+                Second Factor Authentication (2FA) Bypass
+              </li>
+              <li class="bugs-box__component">
+                Source Code Disclosure of arvancloud's websites
+              </li>
+              <li class="bugs-box__component">
+                Misusable misconfiguration of CAPTCHA implementation
+              </li>
+              <li class="bugs-box__component bugs-box__component--flex-grow">
+                CRLF Injection
+              </li>
+              <li class="bugs-box__component">
+                Unauthorized Access to Services (API / Endpoints)
+              </li>
+              <li class="bugs-box__component">Delete a user Account</li>
+              <li class="bugs-box__component bugs-box__component--flex-grow">
+                CRLF Injection
+              </li>
+              <li class="bugs-box__component">
+                Account Takeover by User Interaction
+              </li>
+              <li class="bugs-box__component">
+                Second Factor Authentication (2FA) Bypass
+              </li>
+              <li class="bugs-box__component">
+                Source Code Disclosure of arvancloud's websites
+              </li>
+            </ul>
+          </div>
+          <div class="tell-us flex">
+            <p class="tell-us__description">
+              اگر با آسیب‌پذیری خارج از این قلمرو مواجه شدی به ایمیل
+              <em class="tell-us__imporatant">Bugbounty@arvancloud.ir</em> گزارش
+              بده تا ادامه‌ی روند کارت مشخص بشه
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="sec-forbidden">
+        <div class="container">
+          <div class="forbidden-wrapper flex">
+            <h2 class="forbidden-title">
+              چه آسیب پذیری‌هایی ملاک این برنامه
+              <span class="forbidden-title__span forbidden-title__span--red"
+                >نیست</span
+              >
+              ؟
+            </h2>
+          </div>
+          <div class="forbidden-bugs-wrapper">
+            <div class="forbidden-bugs">
+              <ul class="bugs-box bugs-box--back-red flex">
+                <li class="bugs-box__component">
+                  SSRF (Internal Scan and/or Medium Impact)
+                </li>
+                <li class="bugs-box__component">
+                  Partial Source Code Disclosure of one of private arvancloud's
+                  products
+                </li>
+                <li class="bugs-box__component bugs-box__component--flex-grow">
+                  OAuth misusable misconfiguration
+                </li>
+                <li class="bugs-box__component">
+                  Misusable misconfiguration of CAPTCHA implementation
+                </li>
+                <li class="bugs-box__component bugs-box__component--flex-grow">
+                  CRLF Injection
+                </li>
+                <li class="bugs-box__component">
+                  Unauthorized Access to Services (API / Endpoints)
+                </li>
+                <li class="bugs-box__component">Delete a user Account</li>
+                <li class="bugs-box__component bugs-box__component--flex-grow">
+                  CRLF Injection
+                </li>
+                <li class="bugs-box__component">
+                  Account Takeover by User Interaction
+                </li>
+                <li class="bugs-box__component">
+                  Second Factor Authentication (2FA) Bypass
+                </li>
+                <li class="bugs-box__component">
+                  Source Code Disclosure of arvancloud's websites
+                </li>
+                <li class="bugs-box__component">
+                  SSRF (Internal Scan and/or Medium Impact)
+                </li>
+                <li class="bugs-box__component">
+                  Partial Source Code Disclosure of one of private arvancloud's
+                  products
+                </li>
+                <li class="bugs-box__component bugs-box__component--flex-grow">
+                  OAuth misusable misconfiguration
+                </li>
+                <li class="bugs-box__component">
+                  Misusable misconfiguration of CAPTCHA implementation
+                </li>
+                <li class="bugs-box__component bugs-box__component--flex-grow">
+                  CRLF Injection
+                </li>
+                <li class="bugs-box__component">
+                  Unauthorized Access to Services (API / Endpoints)
+                </li>
+                <li class="bugs-box__component">Delete a user Account</li>
+                <li class="bugs-box__component bugs-box__component--flex-grow">
+                  CRLF Injection
+                </li>
+                <li class="bugs-box__component">
+                  Account Takeover by User Interaction
+                </li>
+                <li class="bugs-box__component">
+                  Second Factor Authentication (2FA) Bypass
+                </li>
+                <li class="bugs-box__component">
+                  Source Code Disclosure of arvancloud's websites
+                </li>
+                <li class="bugs-box__component">
+                  Misusable misconfiguration of CAPTCHA implementation
+                </li>
+                <li class="bugs-box__component bugs-box__component--flex-grow">
+                  CRLF Injection
+                </li>
+                <li class="bugs-box__component">
+                  Unauthorized Access to Services (API / Endpoints)
+                </li>
+                <li class="bugs-box__component">Delete a user Account</li>
+                <li class="bugs-box__component bugs-box__component--flex-grow">
+                  CRLF Injection
+                </li>
+                <li class="bugs-box__component">
+                  Account Takeover by User Interaction
+                </li>
+                <li class="bugs-box__component">
+                  Second Factor Authentication (2FA) Bypass
+                </li>
+                <li class="bugs-box__component">
+                  Source Code Disclosure of arvancloud's websites
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-rules">
+        <div class="container">
+          <div class="title-secation">
+            <h3 class="title-secation__header">
+              چه قوانینی رو باید رعایت کنی ؟
+            </h3>
+            <p
+              class="title-secation__description title-secation__description--color"
+            >
+              کنار هم هستیم تا امنیت رو در فضایی که قلمروی نامحدود داره بهبود
+              بدیم. با رعایت موارد زیر ابر آروان متعهد می‌شه در کنار پاسخ به
+              گزارش در چارچوب این برنامه، از درخواست پی‌گرد قانونی صرف‌نظر کنه.
+              در همین فضا، لازمه به
+              <em class="highligth">قوانین</em>
+              زیر پای‌بند باشیم:
+            </p>
+          </div>
+          <div class="test">
+            <ul class="rules">
+              <li class="rules__item">
+                <span
+                  class="fa fa-check rules__icon inlineFelx"
+                  aria-hidden="true"
+                ></span>
+                آسیب‌پذیری‌ها به شکل جدا تست بشن و از اطلاعات یا دسترسی های به
+                دست آمده از یک آسیب‌پذیری در آسیب‌پذیری دیگر استفاده نشه.
+              </li>
+              <li class="rules__item">
+                <span
+                  class="fa fa-check rules__icon inlineFelx"
+                  aria-hidden="true"
+                ></span>
+                آسیب‌پذیری نباید با استفاده از حساب شخص دیگه ای ارزیابی بشه.
+              </li>
+              <li class="rules__item">
+                <span
+                  class="fa fa-check rules__icon inlineFelx"
+                  aria-hidden="true"
+                ></span>
+                اطلاعات محرمانه نباید افشا بشه و پس از دریافت جایزه می بایست از
+                نگهداری آن ها اجتناب بشه.
+              </li>
+              <li class="rules__item">
+                <span
+                  class="fa fa-check rules__icon inlineFelx"
+                  aria-hidden="true"
+                ></span>
+                از اختلال از سامانه های ابرآروان اجتناب بشه.
+              </li>
+              <li class="rules__item">
+                <span
+                  class="fa fa-check rules__icon inlineFelx"
+                  aria-hidden="true"
+                ></span>
+                به حریم شخصی افراد و کاربران احترام گذاشته بشه.
+              </li>
+              <li class="rules__item">
+                <span
+                  class="fa fa-check rules__icon inlineFelx"
+                  aria-hidden="true"
+                ></span>
+                از IP مشخصی برای ارزیابی استفاده و این IP در گزارش قید بشه.
+              </li>
+              <li class="rules__item">
+                <span
+                  class="fa fa-check rules__icon inlineFelx"
+                  aria-hidden="true"
+                ></span>
+                تمام فعالیت ها و دسترسی ها می بایست در گزارش قید بشه.
+              </li>
+              <li class="rules__item">
+                <span
+                  class="fa fa-check rules__icon inlineFelx"
+                  aria-hidden="true"
+                ></span>
+                از بارگذاری شاهد مثال های آسیب‌پذیری‌ها در سایت ها اشتراکی
+                youtube, imgur و...اجتناب بشه.
+              </li>
+              <li class="rules__item">
+                <span
+                  class="fa fa-check rules__icon inlineFelx"
+                  aria-hidden="true"
+                ></span>
+                اگر پاسخی از سمت هکر کلاه سفید دریافت نشه، گزارش از طریق ایمیل
+                پس از هفت روز کاری غیرفعال می شه.
+              </li>
+              <li class="rules__item">
+                <span
+                  class="fa fa-check rules__icon inlineFelx"
+                  aria-hidden="true"
+                ></span>
+                آسیب‌پذیری‌ها گزارش شده می بایست تاثیر معناداری بر کاربران ،
+                سامانه ها یا داده های ابرآروان داشته باشه.
+              </li>
+              <li class="rules__item">
+                <span
+                  class="fa fa-check rules__icon inlineFelx"
+                  aria-hidden="true"
+                ></span>
+                ممکنه آسیب‌پذیری گزارش شده، پیش از ارسال، به وسیله فرد دیگری
+                گزارش شده باشه، در این موقعیت به گزارش جایزه تعلق نمی گیره.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="sec-send-form">
+        <div class="container">
+          <div class="send-form flex">
+            <div class="send-form__content">
+              <div class="title-secation title-secation--rtl">
+                <h3 class="title-secation__header">
+                  چجوری گزارشت رو برای ما بفرستی ؟
+                </h3>
+                <p class="title-secation__description">
+                  گزارشی که برای ابر آروان می‌فرستی باید این موارد رو داشته
+                  باشه:
+                </p>
+              </div>
+              <ul class="send-form__item">
+                <li class="send-form__items inlineFelx">
+                  در هر گزارش یک آسیب‌پذیری مشخص ارایه بشه.
+                </li>
+                <li class="send-form__items inlineFelx">
+                  آسیب‌پذیری به‌شکل مشروح به همراه شدت و خطر پیشنهادی توضیح داده
+                  بشه.
+                </li>
+                <li class="send-form__items inlineFelx">
+                  مراحل باز‌تولید آسیب‌پذیری شرح داده بشه.
+                </li>
+                <li class="send-form__items inlineFelx">
+                  شاهد مثال برای آسیب‌پذیری به همراه ابزارهای لازم به طور کامل
+                  ارایه بشه.
+                </li>
+                <li class="send-form__items inlineFelx">
+                  هرگونه تنظیم خاص مورد نیاز برای بازسازی حمله، باید ارایه بشه.
+                </li>
+              </ul>
+            </div>
+            <form class="send-form__attachment" action="/">
+              <label class="send-form__label">
+                <img src="/img/send.svg" class="send-form__img" />
+                <input
+                  type="file"
+                  accept=".pdf"
+                  multiple
+                  class="send-form__input"
+                />
+              </label>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer-nav flex-space-between">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item footer-nav__item--primary">محصولات</li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">سرور ابری</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">شبکه توزیع محتوا</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">سرویس میزبانی ویدئو</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">فضای ابری</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">کانتینر ابری</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">دیتابیس ابری</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">سرور اختصاصی</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">سرور مجازی</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">گواهینامه SSL رایگان</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link"> سرویس پخش زنده</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item footer-nav__item--primary">راهکارها</li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">خدمات دواپس </a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">خدمات سازمانی</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">CDN بانکی</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">امنیت ابری</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">خدمات مالی</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">ارز دیجیتال</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">آموزش آنلاین</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">بازیابی ئس از دیزستر</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">استارت آپ ها</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">فروشگاه آنلاین</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">سازمان های بزرگ</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">ابرخصوصی</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item footer-nav__item--primary">منابع</li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">مستندات محصولات</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">راهنمای فنی</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">مستندات API</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">گزارش تغییرات</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">نقشه شبکه</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">پرسش های رایج</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">وضعیت سرویس</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">آروان آکادمی</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">رادارابرآروان</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item footer-nav__item--primary">آروان</li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link"> درباره ی آروان</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">دغدغه اجتماعی</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link"> حقوق شفاف</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">فرصت های شغلی </a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link"> ساختار سازمانی</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">قصه ی آروان</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">چشم انداز </a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">آروانی نوشتن </a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">گزارش شفافیت</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">ساختار سازمانی</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item footer-nav__item--primary">ارتباطات</li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">تماس با ما</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">انجمن کاربری</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">اتاق خبر</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">وبلاگ </a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link"> آروان تک </a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">در رسانه ها</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

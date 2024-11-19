@@ -1,0 +1,81 @@
+.container-fluid {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.container-fluid.no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  box-sizing: border-box;
+}
+
+.row.no-gutter .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.col {
+  float: left;
+  box-sizing: border-box;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.col-1 {
+  width: 8.3333%;
+}
+.col-2 {
+  width: 16.6666%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.3333%;
+}
+.col-5 {
+  width: 41.6666%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.3333%;
+}
+.col-8 {
+  width: 66.6666%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.3333%;
+}
+.col-11 {
+  width: 91.6666%;
+}
+.col-12 {
+  width: 100%;
+}
